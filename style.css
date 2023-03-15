@@ -2,9 +2,6 @@ body {
     background-color: #3da5d9;
     font-family: 'Courier New', Courier, monospace;
 }
-
-
-
 .box_style{
     border: 0.5px solid black;
     padding: 1em;
@@ -14,35 +11,35 @@ body {
 
 .medium_pizza{
     background-color: #ffbd00;
-
+    width: 500px
 }
 
 .large_pizza{
     background-color: #ff5400;
-  
+    width: 500px
 }
 
 .small_pizza{
     background-color: #ff0054;
+    width: 500px
 }
 
 .contacts{
     background-color: #89fc00;
-    flex-direction: column;
     font-size: small;
+}
+.contacts .display{
+    justify-content: space-between;
+    align-items: center;
+}
 
-}
-.location{
-    align-self: flex-end;
-}
 @media(min-width: 960px){
     body{
         background-color: #3da5d9;
     }
     .display{
         display: flex;
-        justify-content: space-between;
-    } 
+    }
     h1{
         text-align: center;
     }   
