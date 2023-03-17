@@ -34,12 +34,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
-@media (max-width: 600px){
-   .medium_pizza, .large_pizza, .small_pizza {
-        width: 100%;
-        max-width: 500px;
-   }
-}
 
 @media (min-width: 960px) {
     body {
@@ -47,10 +41,5 @@ h1 {
     }
     .display {
         display: flex;
-    }
-
-    .medium_pizza, .large_pizza, .small_pizza {
-        width: 33.33%;
-        max-width: none;
     }
 }
