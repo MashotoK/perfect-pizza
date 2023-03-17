@@ -30,9 +30,16 @@ h1 {
     font-size: small;
 }
 
-.contacts .display {
-    justify-content: space-between;
-    align-items: center;
+
+@media (max-width: 750px){
+    .contacts .display {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacts .display {
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 @media (min-width: 960px) {
@@ -41,5 +48,9 @@ h1 {
     }
     .display {
         display: flex;
+    }
+    .contacts .display {
+        justify-content: space-between;
+        align-items: center;
     }
 }
