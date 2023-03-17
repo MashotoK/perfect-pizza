@@ -2,45 +2,55 @@ body {
     background-color: #3da5d9;
     font-family: 'Courier New', Courier, monospace;
 }
-.box_style{
+h1 {
+    text-align: center;
+}
+
+.box_style {
     border: 0.5px solid black;
     padding: 1em;
     margin: 1em;
     margin-bottom: 0.5em;
 }
 
-.medium_pizza{
+.medium_pizza {
     background-color: #ffbd00;
-    width: 500px
 }
 
-.large_pizza{
+.large_pizza {
     background-color: #ff5400;
-    width: 500px
 }
 
-.small_pizza{
+.small_pizza {
     background-color: #ff0054;
-    width: 500px
 }
 
-.contacts{
+.contacts {
     background-color: #89fc00;
     font-size: small;
 }
-.contacts .display{
+
+.contacts .display {
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 600px){
+   .medium_pizza, .large_pizza, .small_pizza {
+        width: 100%;
+        max-width: 500px;
+   }
+}
 
-@media(min-width: 960px){
-    body{
+@media (min-width: 960px) {
+    body {
         background-color: #3da5d9;
     }
-    .display{
+    .display {
         display: flex;
     }
-    h1{
-        text-align: center;
-    }   
+
+    .medium_pizza, .large_pizza, .small_pizza {
+        width: 33.33%;
+        max-width: none;
+    }
 }
